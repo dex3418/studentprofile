@@ -1,0 +1,20 @@
+:root{
+    --fg:#3E5779;
+    --bg:#F1E0C5;
+    --text: "Zalando Sans Expanded", sans-serif;
+    --main:#F1E0C5;
+    --sec: #344966;
+    --foot: #0D1821;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.zalando-sans-expanded{
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
