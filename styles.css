@@ -98,7 +98,7 @@ a {
     font-weight: bold;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Forms */
@@ -172,7 +172,7 @@ input[type="submit"]:hover {
     /* TYPOGRAPHY */
 h1, h2, h3 {
     font-family: var(--text);
-    color: var(--sec);
+    color: var(--main);
     margin-bottom: 1rem;
 }
 
@@ -255,6 +255,9 @@ p {
     background: var(--fg);
     color: var(--bg);
 }
+
+/* Add-ons */
+
 ol{
     list-style: none;
 }
