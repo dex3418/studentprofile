@@ -18,9 +18,7 @@
   font-weight: 400;
   font-style: normal;
 }
-/* ------------------ */
-/*  ROOT VARIABLES    */
-/* ------------------ */
+/* ROOT VARIABLES */
 :root{
     --fg:#3E5779;
     --bg:#F1E0C5;
@@ -30,9 +28,7 @@
     --foot: #0D1821;
 }
 
-/* ------------------ */
-/* BASIC RESET        */
-/* ------------------ */
+/* BASIC RESET */
 *{
     margin: 0;
     padding: 0;
@@ -46,9 +42,7 @@ html, body {
     line-height: 1.6;
 }
 
-/* ------------------ */
-/* GLOBAL STRUCTURE   */
-/* ------------------ */
+/* GLOBAL STRUCTURE */
 header {
     background: var(--sec);
     color: white;
@@ -69,9 +63,7 @@ footer {
     padding: 1.5rem 0;
 }
 
-/* ------------------ */
-/* NAVIGATION         */
-/* ------------------ */
+/* NAVIGATION */
 nav {
     background: var(--fg);
     padding: 0.8rem;
@@ -95,9 +87,7 @@ nav a:hover {
     color: var(--main);
 }
 
-/* ------------------ */
-/* CONTACT + FEEDBACK */
-/* ------------------ */
+    /* CONTACT + FEEDBACK */
 
 section, .contact-block {
     margin-bottom: 2rem;
@@ -149,9 +139,7 @@ input[type="submit"]:hover {
     background: var(--fg);
 }
 
-/* ------------------ */
-/* GRADES PAGE        */
-/* ------------------ */
+/* GRADES PAGE */
 .grades table {
     width: 100%;
     border-collapse: collapse;
@@ -181,9 +169,7 @@ input[type="submit"]:hover {
     margin-bottom: 0.6rem;
 }
 
-/* ------------------ */
-/* TYPOGRAPHY         */
-/* ------------------ */
+    /* TYPOGRAPHY */
 h1, h2, h3 {
     font-family: var(--text);
     color: var(--sec);
@@ -195,12 +181,80 @@ p {
     font-size: 1.05rem;
 }
 
-/* ------------------ */
-/* FONT CLASS         */
-/* ------------------ */
+/* FONT CLASS */
 .zalando-sans-expanded{
   font-family: "Zalando Sans Expanded", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+/* Courses Section */
+.courses h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.2rem;
+    color: var(--sec);
+}
+
+/* Grid layout */
+.course-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* Course Card */
+.course-card {
+    background: var(--bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--sec);
+    transition: 0.3s ease;
+}
+
+.course-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--sec);
+}
+
+.course-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--fg);
+}
+
+/* Button */
+.course-btn {
+    display: inline-block;
+    background: var(--sec);
+    color: var(--bg);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Hover Effects */
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.course-btn:hover {
+    background: var(--fg);
+    color: var(--bg);
+}
+ol{
+    list-style: none;
 }
