@@ -1,23 +1,3 @@
-:root{
-    --fg:#3E5779;
-    --bg:#F1E0C5;
-    --text: "Zalando Sans Expanded", sans-serif;
-    --main:#F1E0C5;
-    --sec: #344966;
-    --foot: #0D1821;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.zalando-sans-expanded{
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 /* ROOT VARIABLES */
 :root{
     --fg:#3E5779;
@@ -69,7 +49,7 @@ nav {
     padding: 0.8rem;
 }
 
-nav ul {
+nav ul  {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -93,11 +73,11 @@ section, .contact-block {
     margin-bottom: 2rem;
 }
 
-a {
+.social {
     color: var(--sec);
     font-weight: bold;
 }
-a:hover {
+.social:hover {
     text-decoration: none;
 }
 
@@ -181,13 +161,6 @@ p {
     font-size: 1.05rem;
 }
 
-/* FONT CLASS */
-.zalando-sans-expanded{
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -255,8 +228,6 @@ p {
     background: var(--fg);
     color: var(--bg);
 }
-
-/* Add-ons */
 
 ol{
     list-style: none;
