@@ -126,6 +126,10 @@ nav a:hover {
     color: var(--main);
 }
 
+    /* Profile */
+.profile{
+    margin: 2rem;
+}
     /* CONTACT + FEEDBACK */
 
 section, .contact-block {
