@@ -40,18 +40,59 @@ span{
 }
 div img{
     vertical-align: middle;
+
 }
-.hero{
+.hero {
+    position: relative;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--def);
+    color: var(--foot);
     display: flex;
     height: 100vh;
     width: 100%;
-
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
 }
-main {
-    padding: 2rem;
+.hero h2, .hero p {
+    position: relative;
+    z-index: 1;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--fg);
+    text-shadow: var(--foot) 1px 1px 4px;
+}
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    color: var(--bg);
+    font-weight: 500;
+}
+/* Blurred background layer */
+.hero > .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/photos/college.avif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+.hero > .bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
 }
 
 footer {
